@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&display=swap');
+
+.greenHour{
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+
+    width: 95px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #58E266;
+}
+
+.yellowHour{
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+
+    width: 95px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #E2E717;
+}
+
+.redHour{
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+
+    width: 95px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #E71010;
+}
+

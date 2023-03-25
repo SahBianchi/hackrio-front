@@ -2,7 +2,6 @@ import React from 'react'
 import Button from '../../componentes/Button'
 import styles from '../Login/style.module.css'
 import logoDonko from '../../assets/logoDonko.png'
-import linha from '../../assets/lineLogin.png'
 
 export const LoginPage = () => {
   return (
