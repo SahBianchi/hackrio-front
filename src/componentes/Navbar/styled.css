@@ -3,8 +3,12 @@
         /* border: 2px solid white; */
         background-color: #000000;
         height: 3.5rem;
-        display: flex;
         color: #EDEDED;
+    }
+
+    .header-width{
+        max-width: 428px;
+        display: flex;
         align-items: center;
     }
 
