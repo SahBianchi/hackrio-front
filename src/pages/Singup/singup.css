@@ -4,5 +4,25 @@
         background-color: #000000;
         min-height: 926px;
         color: #EDEDED;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .purple-text{
+        color: #B935E8;
+    }
+
+    .title-donko{
+        /* border: 2px solid green; */
+        padding: 2rem 1rem;
+        width: 26.76rem;
+    }
+
+    .input-singup{
+        border: 2px solid pink;
+        display: flex;
+        flex-direction: column;
+        width: 22.75rem;
+        height: 15.38rem;
     }
 }   
