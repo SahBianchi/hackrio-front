@@ -1,13 +1,17 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { vaParaContatos, vaParaHomepage } from '../../router/Coordinator'
+import '../Navbar/styled.css'
+import logoDonko from '../../assets/logoDonko.png'
+import { AiOutlineMenu } from "react-icons/ai";
 
 export const Navbar = () => {
     const navigate = useNavigate()
   return (
     <header>
-        <p onClick={()=>vaParaHomepage(navigate)}>Homepage</p>
-        <p onClick={()=>vaParaContatos(navigate)}>Contatos</p>
+        <AiOutlineMenu color='white' fontSize="2.5em"/>
+        <img src={logoDonko} alt='Image Logo'/>
+        <p className='purple-text-header' onClick={()=>vaParaHomepage(navigate)}>Login</p>
     </header>
   )
 }

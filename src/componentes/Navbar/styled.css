@@ -1,0 +1,22 @@
+@media screen and (min-width: 428px){
+    header{
+        /* border: 2px solid white; */
+        background-color: #000000;
+        height: 3.5rem;
+        display: flex;
+        color: #EDEDED;
+        align-items: center;
+    }
+
+    img{
+        width: 4em;
+        height: 4em;
+    }
+
+    .purple-text-header{
+        font-size: 1.2rem;
+        color: #B935E8;
+        font-weight: 700;
+        line-height: 130%;
+    }
+}
