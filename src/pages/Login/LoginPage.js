@@ -33,18 +33,6 @@ export const LoginPage = () => {
 
     }
 
-    const submitLogin = async (body) =>{
-        try {
-            setIsloading(true)
-            const response = await axios.post(BASE_URL+"/users",body)
-            console.log(response)
-            setIsloading(false)
-        } catch (error) {
-            setIsloading(false)
-
-            console.log(error)
-        }
-    }
 
     return (
         <>
@@ -64,7 +52,7 @@ export const LoginPage = () => {
                             <Button type="primary" onClick={() => {
                                 console.log("fui clicado")
                                 handleClick()
-                            }}>Continuar{isLoading ? 1 : 0}</Button>
+                            }}>Continuar</Button>
                         </div>
 
                     </form>
