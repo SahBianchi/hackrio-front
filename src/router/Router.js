@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Contatos } from '../pages/Contatos'
 import { Homepage } from '../pages/Homepage'
 import { LoginPage } from '../pages/Login/LoginPage'
+import { MapPage } from '../pages/MapPage/MapPage'
 import { SingupPage } from '../pages/Singup/SingupPage'
 
 export const Router = () => {
@@ -12,6 +13,7 @@ export const Router = () => {
             <Route path='/' element={<Homepage/>}/>
             <Route path='/singup' element={<SingupPage/>}/>
             <Route path='/login' element={<LoginPage/>}/>
+            <Route path='/map' element={<MapPage/>}/>
             <Route path='/contatos' element={<Contatos/>}/>
         </Routes>
     </BrowserRouter>

@@ -13,3 +13,7 @@ export const goToSingupPage = (navigate)=>{
 export const goToLogin = (navigate)=>{
     navigate('/login')
 }
+
+export const goToMapPage = (navigate) =>{
+    navigate('/map')
+}
