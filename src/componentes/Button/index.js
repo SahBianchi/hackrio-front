@@ -8,7 +8,7 @@ export default function Button({type, children, onClick}){
 
     return(
         <>
-            <button className={styles[type]} onClick={click}>{children}</button>
+            <button type='button' className={styles[type]} onClick={click}>{children}</button>
         </>
     )
 }
