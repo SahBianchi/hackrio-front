@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&display=swap');
+
+@media screen and (min-width: 428px){
+    main{
+        background-color: black;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerHeader{
+        width: 100%;
+        display: flex;
+        color: #EDEDED;
+        flex-direction: column;
+    }
+
+    .logoLogin{
+        width: 152px;
+        height: 152px;
+    }
+
+    .txtSlogan{
+        font-family: 'IBM Plex Sans';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 85px;
+    }
+
+    .containerForm{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputLogin{
+        width: 365px;
+        height: 60px;
+        border-radius: 5px;
+        padding-left: 17px;
+        margin: 8px 0;
+        font-size: 16px;
+    }
+
+    .buttonLogin{
+        margin-top: 85px;
+    }
+
+    .linhaLogin{
+        width: 363.01px;
+        margin: 18px 0;
+        border: 1px solid transparent;
+        background: linear-gradient(white, white) padding-box, linear-gradient(to right, #FF6489, #B935E8) border-box;
+    }
+
+}
+    
+    
+
+
+
+
