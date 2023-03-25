@@ -3,8 +3,8 @@
 @media screen and (min-width: 428px){
     main{
         background-color: black;
-        height: 100vh;
         width: 100vw;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
