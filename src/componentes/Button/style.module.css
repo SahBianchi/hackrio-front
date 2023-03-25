@@ -1,0 +1,25 @@
+.primary{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 27px;
+    width: 365px;
+    height: 51px;
+    line-height: 25px;
+    /* margin: 0 auto; */
+    background: linear-gradient(90deg, #FF87A4 0%, #B935E8 100%);
+}
+
+.secondary{
+    font-size: 18px;
+    font-weight: 700;
+    color: #B935E8;
+    border: 1px solid #B935E8;
+    border-radius: 27px;
+    width: 365px;
+    height: 51px;
+    line-height: 25px;
+    /* margin: 0 auto; */
+    background: transparent;
+}

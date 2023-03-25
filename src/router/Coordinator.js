@@ -9,3 +9,7 @@ export const vaParaContatos = (navigate)=>{
 export const goToSingupPage = (navigate)=>{
     navigate('/singup')
 }
+
+export const goToLogin = (navigate)=>{
+    navigate('/login')
+}
