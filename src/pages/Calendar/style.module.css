@@ -1,0 +1,49 @@
+@media screen and (min-width: 428px){
+    .containerCalendar{
+        width: 428px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+    .calendarImg{
+        width: 397px;
+        height: 344px;
+        margin-top: 10px;
+    }
+
+    .containerEvento{
+        width: 383px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .containerDetails{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 8px;
+    }
+
+    .containerInfos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title{
+        width: 100%;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 8.54px;
+    }
+
+    .infos{
+        width: 100%;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
