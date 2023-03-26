@@ -39,7 +39,7 @@ export const LoginPage = () => {
 
     return (
         <>
-            <main>
+            <section className={styles.sectionLogin}>
                 <div className={styles.containerHeader}>
                     <img src={logoDonko} alt='Image Logo' className={styles.logoLogin} />
                     <h2 className={styles.txtSlogan}>Cultura na palma da sua mão</h2>
@@ -68,7 +68,7 @@ export const LoginPage = () => {
                         goToSingupPage(navigate)
                     }}>Crie uma conta!</Button>
                 </div>
-            </main>
+            </section>
         </>
     )
 }
