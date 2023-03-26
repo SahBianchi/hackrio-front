@@ -21,3 +21,7 @@ export const goToMapPage = (navigate) =>{
 export const goToCalendar = (navigate)=>{
     navigate('/calendar')
 }
+
+export const goToDetails = (navigate, id)=>{
+    navigate(`/details/${id}`)
+}
