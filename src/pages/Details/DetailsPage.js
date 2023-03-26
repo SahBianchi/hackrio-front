@@ -6,6 +6,7 @@ import { DetailsCard } from '../../componentes/DetailsCard/DetailsCard'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import { BASE_URL } from '../../constants/baseUrl'
+import { Skeleton, Spinner } from '@chakra-ui/react'
 
 export const DetailsPage = () => {
     const params = useParams()
@@ -35,7 +36,9 @@ getEvent()
             {event &&
 <>
                 <img className='image-details' src={detailsImage} alt='Image Details' />
-                <DetailsCard event={event}/>
+                {isLoading?
+                    <Spinner w="60px" color='white' marginTop={"100px"}/>:
+                <DetailsCard event={event}/>}
 </>
             }
         </Layout>

@@ -7,6 +7,7 @@ import { BASE_URL } from '../../constants/baseUrl'
 import { useNavigate } from 'react-router-dom'
 import { goToMapPage, goToSingupPage } from '../../router/Coordinator'
 import { useEffect } from 'react'
+import { Spinner } from '@chakra-ui/react'
 
 export const LoginPage = () => {
     const [email, setEmail] = useState('')
@@ -60,7 +61,12 @@ useEffect(()=>{
                             <Button type="primary" onClick={() => {
                                 console.log("fui clicado")
                                 handleClick()
-                            }}>Continuar</Button>
+                            }}>
+                                {
+                        isLoading?
+                        <Spinner w={"24px"}/>:
+                        <span>  Continuar</span>
+                            }</Button>
                         </div>
 
                     </form>

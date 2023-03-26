@@ -1,4 +1,4 @@
-import { Checkbox, CheckboxGroup, Input, Stack } from '@chakra-ui/react'
+import { Checkbox, CheckboxGroup, Input, Spinner, Stack } from '@chakra-ui/react'
 import axios from 'axios'
 import React from 'react'
 import { useState } from 'react'
@@ -120,7 +120,11 @@ export const SingupPage = () => {
         <Button id='cursor-pointer' type='primary' onClick={() => {
           console.log("Fui Clicado")
           handleOnSubmit()
-        }}>Cadastrar</Button>
+        }}> {
+          isLoading?
+          <Spinner w={"24px"}/>:
+          <span>  Cadastrar</span>
+              }</Button>
       </div>
     </Layout>
 
