@@ -5,13 +5,15 @@ import { Layout } from '../../componentes/Layout'
 import { MapCard } from '../../componentes/MapCard/MapCard'
 import { HiLocationMarker } from 'react-icons/hi'
 import { BiCurrentLocation } from 'react-icons/bi'
-import { goToDetails } from '../../router/Coordinator'
+import { goToCalendar, goToDetails } from '../../router/Coordinator'
 import axios from 'axios'
 import { BASE_URL } from '../../constants/baseUrl'
 import { IoCalendarOutline } from 'react-icons/io5'
+import { useNavigate } from 'react-router-dom'
 
 export const MapPage = () => {
     const [event,setEvent] = useState()
+    const navigate = useNavigate()
     const [isLoading,setIsloading] = useState(false)
 
 
@@ -58,7 +60,7 @@ export const MapPage = () => {
                         <BiCurrentLocation />
                     </div>
                     <div id='calendar' > 
-                        <IoCalendarOutline id='icon-calendar'/>
+                        <IoCalendarOutline id='icon-calendar' onClick={()=>{goToCalendar(navigate)}}/>
                     </div>
                     <div id='group-zoom'>
                         <div className='zoom-container'>
