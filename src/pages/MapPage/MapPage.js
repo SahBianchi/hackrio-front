@@ -68,8 +68,6 @@ export const MapPage = () => {
                                     <p>• 19 min</p>
                                 </Flex>
                             </Flex>
-
-
                         </Flex>
                     </div>
 

@@ -1,12 +1,11 @@
 @media screen and (min-width: 428px){
     
     .singup-container{
-        background-color: #000000;
-        min-height: 926px;
+        height: 100vh;
         color: #EDEDED;
         display: flex;
         flex-direction: column;
-        gap: 2.5rem
+        gap: 1.5rem
     }
 
     .purple-text{
@@ -14,14 +13,13 @@
     }
 
     .title-inputs{
-        gap: 3rem;
         width: 26.76rem;
 
     }
 
     .title-donko{
         padding-top: 2rem;
-        padding-bottom: 6rem;
+        padding-bottom: 3rem;
         width: 22.75rem;
     }
 

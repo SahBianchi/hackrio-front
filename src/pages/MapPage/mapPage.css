@@ -1,35 +1,29 @@
 
-@media screen and (max-width: 428px){
+@media screen and (min-width: 428px){
     .coitainer-map{
-        min-height: 926px;
         max-width: 428px;
-        position: relative;
-        background-color: #000000;
     }
 
     .map-img{
-        width: 27rem;
-        height: 43rem;
-        position: absolute;
+        width: 428px;
+        height: 42rem;
     }
 
     .info-event-map{
         background-color: white;
-        width:428px;
-        height: 17.25rem;
+        height: 17rem;
+        border-radius: 2rem 2rem 0 0;
         position:fixed;
         bottom: 0;
     }
 
     .infos-half-top{
-        border: 2px solid purple;
         display: flex;
         align-items: center;
         padding-top: 0.5rem;
     }
 
     .infos-half-bottom{
-        border: 2px solid orange;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
