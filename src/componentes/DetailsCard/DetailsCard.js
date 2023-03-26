@@ -9,19 +9,34 @@ import { BsCarFrontFill } from "react-icons/bs";
 import { MdDirectionsBike } from "react-icons/md";
 import colorMapIcon from '../../assets/localIconColor.svg'
 
-export const DetailsCard = () => {
+export const DetailsCard = ({event}) => {
+    const {adress,
+        category,
+        empresa,
+        linksSales,
+        name,
+        price,
+        startAt,
+        type} = event
+        const handleDate = (date) =>{
+            // const day = date.substring(8, 10); 
+            const time = date.substring(11, 16); 
+            return time
+          }
     return (
         <main>
+        { name &&
+        <>
             <div className='title-hour'>
                 <Flex flexDirection='column' width='75%'>
                     <Flex flexDirection='column'>
-                        <h2>Morrendo de Rir</h2>
-                        <h2>Local: Circo Voador</h2>
-                        <p className='type-event-title'>Standup / Comedy</p>
+                        <h2>{name}</h2>
+                        <h2>Local: {empresa.name}</h2>
+                        <p className='type-event-title'>{type} / {category}</p>
                     </Flex>
                 </Flex>
                 <Flex>
-                    <InfoHour type='greenHour'>21:30</InfoHour>
+                    <InfoHour type='greenHour'>{handleDate(startAt)}</InfoHour>
                 </Flex>
             </div>
 
@@ -36,13 +51,15 @@ export const DetailsCard = () => {
 
                 <div className='event-ticket'>
                     <h2>Ingresso:</h2>
-                    <p id='paragraf'>R$ 15,00</p>
+                    <p id='paragraf'>R$ {price}</p>
                 </div>
 
                 <div className='event-ticket-link-buy'>
-                    <h2>Onde comprar:</h2>
-                    <a href='https://www.lipsum.com/'>https://www.lipsum.com/</a>
-                    <a href='https://www.lipsum.com/'>https://www.lipsum.com/</a>
+                    <h2>Onde comprar:</h2>{
+                        linksSales.map((link)=>{
+                            return  <a href={link}>{link}</a>
+                        })
+                    }
                 </div>
 
                 <div className='event-site'>
@@ -53,7 +70,7 @@ export const DetailsCard = () => {
             </div>
 
             <div className='address-time-transportation'>
-                <p className='address'>Rua Barra, 1234 - Barra da Tijuca - 56743-876</p>
+                <p className='address'>Rua {adress.rua}, {adress.numero} - {adress.bairro} - {adress.cep}</p>
                 <div className='transportation-time'>
                     <Flex flexDir='column'>
                         <Flex>
@@ -78,7 +95,9 @@ export const DetailsCard = () => {
                     <img className='map-icon-color' src={colorMapIcon} alt='Location Icon'/>
                 </div>
             </div>
+        </>
 
+    }
         </main>
     )
 }

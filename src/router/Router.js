@@ -18,7 +18,8 @@ export const Router = () => {
             <Route path='/mappage' element={<MapPage/>}/>
             <Route path='/contatos' element={<Contatos/>}/>
             <Route path='/calendar' element={<CalendarPage/>}/>
-            <Route path='/details/id'element={<DetailsPage/>}/>
+            <Route path='/detailsTest/'element={<DetailsPage/>}/>
+            <Route path='/details/:id'element={<DetailsPage/>}/>
         </Routes>
     </BrowserRouter>
   )
