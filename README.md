@@ -10,7 +10,7 @@ O Donko é uma aplicação web projetada para ser uma plataforma completa que se
 
 Durante o processo notamos que as principais dores do segmento de arte, cultura e entretenimento, teatro e música, é que atualmente existem diversos sites separados muitas vezes por tema, também não existia um "Guia de Eventos" por localização e menos ainda que tivesse um identificador de preferências. Com isso veio a solução, criar uma plataforma que forneça ao usuário informações sobre eventos culturais em sua área local, facilitando a busca e participação nessas atividades, por geolocalização e interação visual por mapa. Assim visamos o aumento de participação nos eventos locais e de faturamento desse setor no Estado do Rio de Janeiro.
 
-Conheça a plataforma [**DonkoRio**](https://donko-qoxwbeeqn-sahbianchi.vercel.app/login) e tenha acesso a *Cultura na palma da sua mão* 😉. 
+Conheça a plataforma [**DonkoRio**](https://donko-rio.vercel.app/login) e tenha acesso a *Cultura na palma da sua mão* 😉. 
 
 <br>
 
