@@ -8,14 +8,15 @@ import { FaWalking } from "react-icons/fa";
 import { BsCarFrontFill } from "react-icons/bs";
 import { MdDirectionsBike } from "react-icons/md";
 import { InfoHour } from '../../componentes/InfoHour'
+import { LineDividing } from '../../componentes/LineDividing'
 
 export const MapPage = () => {
     return (
         <Layout>
             <div className='coitainer-map'>
-
-                <img className='map-image' src={mapImage} alt='Map Image' />
-
+               
+                    <img className='map-img' src={mapImage} alt='Map Image' />
+        
                 <div className='info-event-map'>
                     <div className='infos-half-top'>
                         <Flex flexDirection='column' gap='0.5rem'>
@@ -30,15 +31,15 @@ export const MapPage = () => {
                         </Flex>
 
                         <Flex>
-                           <InfoHour type='greenHour'>21:30</InfoHour>
+                            <InfoHour type='greenHour'>21:30</InfoHour>
                         </Flex>
                     </div>
-                    <div className='line-divisor'></div>
+                    <LineDividing />
                     <div className='infos-half-bottom' flexDirection='column'>
                         <p>Rua Barra, 1234 - Barra da Tijuca - 56743-876</p>
-                        <Flex  
-                        width='428px'
-                        fontSize='1.5rem'
+                        <Flex
+                            width='428px'
+                            fontSize='1.5rem'
                         >
                             <Flex flexDir='column'>
                                 <Flex>
