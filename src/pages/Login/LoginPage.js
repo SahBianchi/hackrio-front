@@ -28,7 +28,6 @@ useEffect(()=>{
         setIsloading(true)
           
             const response = await axios.post(`${BASE_URL}/users/login`,body)
-            console.log(response)
             localStorage.setItem("token-donko",response.data.token)
             setIsloading(false)
             setEmail('')
@@ -59,7 +58,6 @@ useEffect(()=>{
 
                         <div className={styles.buttonLogin}>
                             <Button type="primary" onClick={() => {
-                                console.log("fui clicado")
                                 handleClick()
                             }}>
                                 {

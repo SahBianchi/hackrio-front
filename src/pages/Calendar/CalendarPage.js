@@ -28,7 +28,6 @@ getEvents()
       console.log(error)
     }
   }
-  console.log(events)
 
   const handleDate = (date) =>{
     // const day = date.substring(8, 10); 

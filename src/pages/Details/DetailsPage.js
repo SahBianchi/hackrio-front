@@ -17,13 +17,11 @@ export const DetailsPage = () => {
       
 getEvent()
     },[])
-    console.log(event)
     const getEvent = async () =>{
         try {
             setIsloading(true)
             const result = await axios.get(`${BASE_URL}/events?id=${params.id}`)
             setEvent(result.data.events[0])
-            console.log(event)
             setIsloading(false)            
         } catch (error) {
             setIsloading(false)
