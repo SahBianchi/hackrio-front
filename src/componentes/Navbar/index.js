@@ -12,7 +12,7 @@ export const Navbar = ({isLogged}) => {
     <header>
       <div className='header-width'>
         <AiOutlineMenu color='white' fontSize="2.5em" />
-        <img src={logoDonko} alt='Image Logo' />
+        <img src={logoDonko} alt='Image Logo' onClick={()=> goToHomePage(navigate)}/>
         <p className='purple-text-header' onClick={() => goToHomePage(navigate)}>{location.pathname==="/singup"?"Login":"Logout"}</p>
       </div>
     </header>
