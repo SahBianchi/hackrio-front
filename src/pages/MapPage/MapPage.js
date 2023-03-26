@@ -1,5 +1,6 @@
 import React from 'react'
-import '../MapPage/mapPage.css'
+// import '../MapPage/mapPage.css'
+import "./styled.css"
 import mapImage from '../../assets/maps.png'
 import { Layout } from '../../componentes/Layout'
 import { Flex } from '@chakra-ui/react'
@@ -14,10 +15,16 @@ export const MapPage = () => {
     return (
         <Layout>
             <div className='coitainer-map'>
-               
-                    <img className='map-img' src={mapImage} alt='Map Image' />
-        
+                <div className='container-img'>
+                    <img className='map-img'  src={mapImage} alt='Map Image' />
+                    <div className='group-zoom'>
+                        <button className='zoom-btn'>+</button>
+                        <button className='zoom-btn'>-</button>
+                    </div>
+                </div>
+
                 <div className='info-event-map'>
+                   
                     <div className='infos-half-top'>
                         <Flex flexDirection='column' gap='0.5rem'>
                             <Flex flexDirection='column'>
