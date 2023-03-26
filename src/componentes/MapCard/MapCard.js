@@ -7,29 +7,50 @@ import { MdDirectionsBike } from "react-icons/md";
 import { InfoHour } from '../../componentes/InfoHour'
 import { LineDividing } from '../../componentes/LineDividing'
 import '../MapCard/styled.css'
+import { useNavigate } from 'react-router-dom';
+import { goToDetails } from '../../router/Coordinator';
 
-export const MapCard = () => {
+export const MapCard = ({event}) => {
+    const {
+        id,
+        adress,
+        about,
+        category,
+        empresa,
+        linksSales,
+        name,
+        price,
+        startAt,
+        type} = event
+const navigate =useNavigate()
+
+
+        const handleDate = (date) =>{
+            // const day = date.substring(8, 10); 
+            const time = date.substring(11, 16); 
+            return time
+          }
     return (
         <main>
             <div className='info-event-map'>
-                <div className='infos-half-top'>
+                <div className='infos-half-top' onClick={()=>goToDetails(navigate,id)}>
                     <Flex flexDirection='column'>
                         <Flex flexDirection='column'>
-                            <h2 className='title-top'>Morrendo de Rir</h2>
-                            <h2 className='title-top'>Local: Circo Voador</h2>
+                            <h2 className='title-top'>{name}</h2>
+                            <h2 className='title-top'>Local: {empresa.name}</h2>
                         </Flex>
                         <Flex flexDirection='column' >
-                            <p className='type-event'>Standup / Comedy</p>
-                            <p className='type-event'>R$15,00</p>
+                            <p className='type-event'>{type} / {category}</p>
+                            <p className='type-event'>R${price}</p>
                         </Flex>
                     </Flex>
                     <Flex>
-                        <InfoHour type='greenHour'>21:30</InfoHour>
+                        <InfoHour type='greenHour'>{handleDate(startAt)}</InfoHour>
                     </Flex>
                 </div>
                 <LineDividing />
                 <div className='infos-half-bottom'>
-                    <p>Rua Barra, 1234 - Barra da Tijuca - 56743-876</p>
+                    <p>Rua {adress.rua}, {adress.number} -{adress.bairro} - {adress.cep}</p>
                     <Flex
                         width='428px'
                         fontSize='1.5rem'
