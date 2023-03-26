@@ -2,11 +2,12 @@
 @media screen and (max-width: 428px){
     .coitainer-map{
         min-height: 926px;
-        max-width: 430px;
+        max-width: 428px;
         position: relative;
+        background-color: #000000;
     }
 
-    .map-image{
+    .map-img{
         width: 27rem;
         height: 43rem;
         position: absolute;
@@ -21,24 +22,18 @@
     }
 
     .infos-half-top{
+        border: 2px solid purple;
         display: flex;
         align-items: center;
-        height: 50%;
-
+        padding-top: 0.5rem;
     }
 
     .infos-half-bottom{
-        height: 50%;
+        border: 2px solid orange;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 0.5rem 0;
-    }
-
-    .line-divisor{
-        background: linear-gradient(#FF87A4, #B935E8);
-        width: 428px;
-        height: 0.1rem;
+        gap: 0.8rem;
     }
 }
 
