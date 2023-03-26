@@ -7,31 +7,28 @@
 .container-img{
     overflow:scroll;
     width:428px;
-    /* height: 50vh; */
+    height: 100%;
 }
+
 .map-img{
     width: 2000px;
     height: 2000px;
 }
-.info-event-map{
-    height: 50%;
-    margin-top: auto;
-    padding-top:16px;
-    background-color: #fff ;
-}
+
 .group-zoom{
     position: fixed;
-    right: 20px;
     top:80px;
+    width: 428px;
+}
+
+.zoom-container{
+    position: absolute;
+    right: 2rem;
     display: flex;
     flex-direction: column;
     gap: 4px;
-    
-
 }
+
 .zoom-btn{
     width: 24px;
-}
-.infos-half-top{
-    display: flex;
 }
