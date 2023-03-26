@@ -8,6 +8,7 @@ import { BiCurrentLocation } from 'react-icons/bi'
 import { goToDetails } from '../../router/Coordinator'
 import axios from 'axios'
 import { BASE_URL } from '../../constants/baseUrl'
+import { IoCalendarOutline } from 'react-icons/io5'
 
 export const MapPage = () => {
     const [event,setEvent] = useState()
@@ -51,6 +52,9 @@ export const MapPage = () => {
                     </div>
                     <div id='tag-map5' > 
                         <BiCurrentLocation />
+                    </div>
+                    <div id='calendar' > 
+                        <IoCalendarOutline id='icon-calendar'/>
                     </div>
                     <div id='group-zoom'>
                         <div className='zoom-container'>

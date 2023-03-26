@@ -6,6 +6,7 @@
     height: 100%;
 }
 .container-img{
+    margin-top: 3.5rem;
     overflow:hidden;
     width:428px;
     height: 100%;
@@ -59,6 +60,21 @@
     font-size: 1.3rem;
     top: 280px;
     font-size: 1.3rem;
+}
+
+#calendar{
+    background-color: black;
+    position: fixed;
+    bottom: 300px;
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 3rem;
+    margin-left: 1rem;
+    color: #b935e8;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .group-zoom{
