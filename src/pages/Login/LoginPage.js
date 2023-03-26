@@ -4,10 +4,13 @@ import styles from '../Login/style.module.css'
 import logoDonko from '../../assets/logoDonko.png'
 import axios from 'axios'
 import { BASE_URL } from '../../constants/baseUrl'
+import { useNavigate } from 'react-router-dom'
+import { goToSingupPage } from '../../router/Coordinator'
 
 export const LoginPage = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const navigate = useNavigate()
     const [isLoading, setIsloading] = useState(false)
 
 
@@ -61,8 +64,8 @@ export const LoginPage = () => {
                 <div>
                     <hr className={styles.linhaLogin} />
                     <Button type="secondary" onClick={() => {
-                               console.log("fui clicado")
 
+                        goToSingupPage(navigate)
                     }}>Crie uma conta!</Button>
                 </div>
             </main>
