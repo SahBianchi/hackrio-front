@@ -1,5 +1,5 @@
 import React from 'react'
-// import '../MapPage/mapPage.css'
+//import '../MapPage/mapPage.css'
 import "./styled.css"
 import mapImage from '../../assets/maps.png'
 import { Layout } from '../../componentes/Layout'

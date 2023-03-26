@@ -16,6 +16,7 @@ export const DetailsPage = () => {
         <Layout>
             <main>
                 <img className='image-details' src={detailsImage} alt='Image Details' />
+                
                 <div className='infos-half-top'>
                     <Flex flexDirection='column' gap='0.5rem'>
                         <Flex flexDirection='column'>
