@@ -7,6 +7,7 @@ import { IoIosSubway } from "react-icons/io";
 import { FaWalking } from "react-icons/fa";
 import { BsCarFrontFill } from "react-icons/bs";
 import { MdDirectionsBike } from "react-icons/md";
+import { InfoHour } from '../../componentes/InfoHour'
 
 export const MapPage = () => {
     return (
@@ -17,27 +18,29 @@ export const MapPage = () => {
 
                 <div className='info-event-map'>
                     <div className='infos-half-top'>
-                        <Flex flexDirection='column'>
+                        <Flex flexDirection='column' gap='0.5rem'>
                             <Flex flexDirection='column'>
                                 <h2>Morrendo de Rir</h2>
                                 <h2>Local: Circo Voador</h2>
                             </Flex>
-                            <Flex>
+                            <Flex flexDirection='column' >
                                 <p>Standup / Comedy</p>
                                 <p>R$15,00</p>
                             </Flex>
                         </Flex>
 
                         <Flex>
-                            {/* chamar o neogocio de horario */}
-                            <h1>21:30</h1>
+                           <InfoHour type='greenHour'>21:30</InfoHour>
                         </Flex>
                     </div>
                     <div className='line-divisor'></div>
-                    <Flex>
+                    <div className='infos-half-bottom' flexDirection='column'>
                         <p>Rua Barra, 1234 - Barra da Tijuca - 56743-876</p>
-                        <Flex>
-                            <Flex>
+                        <Flex  
+                        width='428px'
+                        fontSize='1.5rem'
+                        >
+                            <Flex flexDir='column'>
                                 <Flex>
                                     <IoIosSubway />
                                     <p>• 21 min</p>
@@ -47,7 +50,7 @@ export const MapPage = () => {
                                     <p>• 35 min</p>
                                 </Flex>
                             </Flex>
-                            <Flex>
+                            <Flex flexDir='column'>
                                 <Flex>
                                     <BsCarFrontFill />
                                     <p>• 26 min</p>
@@ -60,7 +63,7 @@ export const MapPage = () => {
 
 
                         </Flex>
-                    </Flex>
+                    </div>
 
 
                 </div>

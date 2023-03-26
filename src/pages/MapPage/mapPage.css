@@ -1,9 +1,8 @@
 
 @media screen and (max-width: 428px){
     .coitainer-map{
-        border: 2px solid green;
         min-height: 926px;
-        max-width: 428px;
+        max-width: 430px;
         position: relative;
     }
 
@@ -22,14 +21,19 @@
     }
 
     .infos-half-top{
-        border: 2px solid blue;
         display: flex;
         align-items: center;
-        height: 7.5rem;
+        height: 50%;
 
     }
 
-
+    .infos-half-bottom{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0.5rem 0;
+    }
 
     .line-divisor{
         background: linear-gradient(#FF87A4, #B935E8);
