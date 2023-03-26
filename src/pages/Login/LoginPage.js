@@ -35,7 +35,7 @@ useEffect(()=>{
             goToMapPage(navigate)
         } catch (error) {
             setIsloading(false)
-            if(error.response.status===401){
+            if(error.response.status===401 || error.response.status===404 ){
                 alert(error.response.data)
             }
 
