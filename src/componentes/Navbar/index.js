@@ -8,7 +8,6 @@ import { AiOutlineMenu } from "react-icons/ai";
 export const Navbar = ({isLogged}) => {
   const location = useLocation()
   const navigate = useNavigate()
-  console.log(location)
   return (
     <header>
       <div className='header-width'>
