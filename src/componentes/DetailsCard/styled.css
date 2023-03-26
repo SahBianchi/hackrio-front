@@ -1,0 +1,89 @@
+main{
+    /* border: 2px solid red; */
+}
+
+.title-hour{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding-top: 0.5rem;
+
+}
+
+.type-event-title{
+    width: 428px
+}
+
+.body-infos{
+    width: 400px;
+}
+
+.event-about{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.event-ticket{
+    display: flex;
+    width: 350px;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+#paragraf{
+    display: flex;
+    align-items: center;
+    width: 70rem;
+}
+
+.event-ticket-link-buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    padding-bottom: 0.5rem;
+}
+
+.event-ticket-link-buy, h2{
+    width: 428px;
+}
+
+.event-ticket-link-buy, a{
+    width: 350px;
+}
+
+.event-site{
+    gap: 0.3rem;
+    width: 350px;
+}
+
+.address-time-transportation{
+    width: 400px;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+.address{
+    width: 350px;
+    padding-bottom: 0.5rem;
+}
+
+.transportation-time{
+    width: 400px;
+    font-size: 1.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.map-icon-color{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+

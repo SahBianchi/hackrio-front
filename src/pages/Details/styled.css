@@ -1,0 +1,13 @@
+   
+    main{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 428px;
+    }
+
+    .image-details{
+        margin-top: 3.5rem;
+        height: 280px;
+        width: 428px;
+    }  
