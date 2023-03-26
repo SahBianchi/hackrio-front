@@ -1,16 +1,18 @@
-# **HACKATHON RIO EMPREENDER CRIATIVO**
-
 <p align="center">
-    <img src="./src/assets/logoDonko.png" width="400" height="auto">
+    <img src="./src/assets/banner-readme.png">
 </p>
 
-# **Projeto DonkoRio**
+# **HACKATHON RIO EMPREENDER CRIATIVO**
+
+## **Projeto DonkoRio**
 
 O Donko é uma aplicação web que será projetada para ser uma plataforma completa que serve como guia para eventos culturais, desde shows musicais até exposições de arte, teatro e outras opções de entretenimento.
 
 Durante o processo notamos que as principais dores do segmento de arte, cultura e entretenimento, teatro e música, é que atualmente existem diversos sites separados muitas vezes por tema, também não existia um "Guia de Eventos" por localização e menos ainda que tivesse um identificador de preferências. Com isso veio a solução, criar uma plataforma que forneça ao usuário informações sobre eventos culturais em sua área local, facilitando a busca e participação nessas atividades, por geolocalização e interação visual por mapa. Assim visamos o aumento de participação nos eventos locais e de faturamento desse setor no Estado do Rio de Janeiro.
 
-### **Nosso Diferencial:**
+<br>
+
+#### **Nosso Diferencial:**
 * Geolocalização
 * Filtros inteligentes que mostram ao usuário possíveis eventos que possam ser de seu interesse conforme sua usabilidade
 * Alerta para que o usuário saiba se o evento está longe, perto ou se já começou.
@@ -20,7 +22,7 @@ Durante o processo notamos que as principais dores do segmento de arte, cultura 
 
 <br>
 
-## 🚀 Começando
+## 🚀 **Começando**
 
 Essas instruções permitirão que você consiga ter esse projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
@@ -32,7 +34,7 @@ Essas instruções permitirão que você consiga ter esse projeto em operação 
 <br>
 <br>
 
-## 📦 Desenvolvimento
+## 📦 **Desenvolvimento**
 
 ### 🛠️ Construído com
 
@@ -48,7 +50,7 @@ Essas instruções permitirão que você consiga ter esse projeto em operação 
 
 <br>
 
-## 📌 Versão
+## 📌 **Versão**
 
 Nós usamos o [GitHub](https://github.com/) para controle de versão. 
 
@@ -60,7 +62,7 @@ Foi criado dois repositórios, um para o Front-end e outro para o Back-end. Voc�
 <br>
 <br>
 
-## ✏️ Produto
+## ✏️ **Produto**
 
 <p align="center">
     <img src="./src/assets/aplicacao.png" width="700" height="auto">
@@ -69,7 +71,7 @@ Foi criado dois repositórios, um para o Front-end e outro para o Back-end. Voc�
 <br>
 <br>
 
-## 📺 Vídeos de Apresentação
+## 📺 **Vídeos de Apresentação**
 
 * <a href="#">Apresentação</a>
 
@@ -79,7 +81,7 @@ Foi criado dois repositórios, um para o Front-end e outro para o Back-end. Voc�
 <br>
 
 ---
-## ✒️ Equipe
+## ✒️ **Equipe**
 
 🚀 **Mônica Jesus** - *Administração* - [Linkedin](https://www.linkedin.com/in/monicajprado)
 
@@ -93,7 +95,7 @@ Foi criado dois repositórios, um para o Front-end e outro para o Back-end. Voc�
 <br>
 <br>
 
-## 🎁 Expressões de gratidão
+## 🎁 **Expressões de gratidão**
 
 Gostariámos de agradecer ao **Fecomércio RJ** e **SEBRAI** por promover o **HACKATHON RIO EMPREENDER CRIATIVO** e nos dar a oportunidade de compartilharmos nossos conhecimentos e desenvolvermos nossas habilidades na construção desse desafio.
 
