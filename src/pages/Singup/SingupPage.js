@@ -1,10 +1,53 @@
 import { Checkbox, CheckboxGroup, Input, Stack } from '@chakra-ui/react'
+import axios from 'axios'
 import React from 'react'
+import { useState } from 'react'
 import Button from '../../componentes/Button'
 import { Layout } from '../../componentes/Layout'
+import { BASE_URL } from '../../constants/baseUrl'
 import '../Singup/singup.css'
 
 export const SingupPage = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [nickname, setNickname] = useState('')
+  const [interest, setInterest] = useState([])
+  const [isLoading, setIsloading] = useState(false)
+
+  const handleChangeCheckBox = (e) => {
+    if (e.target.checked) {
+      setInterest([...interest, e.target.value])
+    } else {
+      const newArr = [...interest]
+      const index = newArr.indexOf(e.target.value)
+      newArr.splice(index, 1)
+      setInterest(newArr)
+    }
+  }
+  const handleOnSubmit = async () => {
+    try {
+      const newUser = {
+        name: nickname,
+        email,
+        password,
+        interests: {
+          types: interest,
+          categories: []
+        }
+      }
+      setIsloading(true)
+
+      const response = await axios.post(`${BASE_URL}/users/signup`, newUser)
+      console.log(response)
+      localStorage.setItem("token-donko", response.data.token)
+      setIsloading(false)
+      setEmail('')
+      setPassword('')
+      window.location.reload()
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   return (
     <Layout>
@@ -13,16 +56,23 @@ export const SingupPage = () => {
           <h1 className='title-donko'>Olá, boas vindas <br /> ao Donko </h1>
           <div className='input-singup'>
             <Input
+              value={nickname}
+              onChange={(e) => setNickname(e.target.value)}
               placeholder='Apelido'
               width='22.75rem'
               height='3.75rem'
             ></Input>
             <Input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder='E-mail'
               width='22.75rem'
               height='3.75rem'
             ></Input>
             <Input
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              type="password"
               placeholder='Senha'
               width='22.75rem'
               height='3.75rem'
@@ -31,20 +81,20 @@ export const SingupPage = () => {
             <div className='checkbox-container'>
               <CheckboxGroup display='flex'>
                 <Stack>
-                  <Checkbox id='cursor-pointer' value='teatro'>Teatro</Checkbox>
-                  <Checkbox id='cursor-pointer' value='música'>Música</Checkbox>
+                  <Checkbox id='cursor-pointer' value='teatro' onChange={handleChangeCheckBox}>Teatro</Checkbox>
+                  <Checkbox id='cursor-pointer' value='música' onChange={handleChangeCheckBox}>Música</Checkbox>
                 </Stack>
               </CheckboxGroup>
               <CheckboxGroup display='flex'>
                 <Stack>
-                  <Checkbox id='cursor-pointer' value='exposição'>Exposição</Checkbox>
-                  <Checkbox id='cursor-pointer' value='dança'>Dança</Checkbox>
+                  <Checkbox id='cursor-pointer' value='exposição' onChange={handleChangeCheckBox}>Exposição</Checkbox>
+                  <Checkbox id='cursor-pointer' value='dança' onChange={handleChangeCheckBox}>Dança</Checkbox>
                 </Stack>
               </CheckboxGroup>
               <CheckboxGroup display='flex'>
                 <Stack>
-                  <Checkbox id='cursor-pointer' value='cinema'>Cinema</Checkbox>
-                  <Checkbox id='cursor-pointer' value='literatura'>Literatura</Checkbox>
+                  <Checkbox id='cursor-pointer' value='cinema' onChange={handleChangeCheckBox}>Cinema</Checkbox>
+                  <Checkbox id='cursor-pointer' value='literatura' onChange={handleChangeCheckBox}>Literatura</Checkbox>
                 </Stack>
               </CheckboxGroup>
             </div>
@@ -65,6 +115,7 @@ export const SingupPage = () => {
         </div>
         <Button id='cursor-pointer' type='primary' onClick={() => {
           console.log("Fui Clicado")
+          handleOnSubmit()
         }}>Cadastrar</Button>
       </div>
     </Layout>
