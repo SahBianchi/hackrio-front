@@ -5,9 +5,11 @@ import "./styled.css"
 
 
 export const Layout = (props) => {
+const {isLogged,setIsLogged} = props
+
   return (
     <div className='layout-container'>
-        <Navbar/>
+        <Navbar isLogged={isLogged}/>
         {props.children}
     </div>
   )

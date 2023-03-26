@@ -2,12 +2,15 @@ import { Checkbox, CheckboxGroup, Input, Stack } from '@chakra-ui/react'
 import axios from 'axios'
 import React from 'react'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Button from '../../componentes/Button'
 import { Layout } from '../../componentes/Layout'
 import { BASE_URL } from '../../constants/baseUrl'
+import { goToMapPage } from '../../router/Coordinator'
 import '../Singup/singup.css'
 
 export const SingupPage = () => {
+  const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [nickname, setNickname] = useState('')
@@ -43,6 +46,7 @@ export const SingupPage = () => {
       setIsloading(false)
       setEmail('')
       setPassword('')
+      goToMapPage(navigate)
       window.location.reload()
     } catch (error) {
       console.log(error)
