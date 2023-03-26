@@ -4,7 +4,7 @@
         color: #EDEDED;
         display: flex;
         flex-direction: column;
-        gap: 1.5rem
+        gap: 2rem
     }
 
     .purple-text{
@@ -18,7 +18,7 @@
 
     .title-donko{
         padding-top: 2rem;
-        padding-bottom: 3rem;
+        padding-bottom: 4rem;
         width: 22.75rem;
     }
 
@@ -37,6 +37,7 @@
         width: 22.75rem;
         display: flex;
         flex-direction: row;
+        padding-bottom: 1rem;
     }
 
     #cursor-pointer:hover{
@@ -57,5 +58,6 @@
     #checkbox-termo{
         display: flex;
         gap: 0.5rem;
+        padding-bottom: 1.5rem;
     }
  
