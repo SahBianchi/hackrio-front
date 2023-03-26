@@ -1,0 +1,39 @@
+main{
+    /* border: 2px solid green; */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-event-map{
+    /* border: 2px solid orange; */
+    width: 428px;
+    /* height: 50%; */
+}
+
+.infos-half-top{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+
+}
+
+.title-top{
+    width: 220px;
+}
+
+.infos-half-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.type-event{
+    width: 220px;
+}
+
+
+
