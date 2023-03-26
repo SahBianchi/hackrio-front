@@ -4,10 +4,40 @@
         background-color: #000000;
         height: 3.5rem;
         color: #EDEDED;
+        position: fixed;
+        width: 100vw;
     }
 
     .header-width{
-        max-width: 428px;
+        width: 428px;
+        display: flex;
+        align-items: center;
+    }
+
+    img{
+        width: 4em;
+        height: 4em;
+    }
+
+    .purple-text-header{
+        font-size: 1.2rem;
+        color: #B935E8;
+        font-weight: 700;
+        line-height: 130%;
+    }
+}
+@media screen and (max-width: 429px){
+    header{
+        /* border: 2px solid white; */
+        background-color: #000000;
+        height: 3.5rem;
+        color: #EDEDED;
+        position: fixed;
+        width: 428px;
+    }
+
+    .header-width{
+        width: 428px;
         display: flex;
         align-items: center;
     }

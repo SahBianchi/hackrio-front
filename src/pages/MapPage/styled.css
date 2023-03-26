@@ -1,0 +1,37 @@
+.coitainer-map{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.container-img{
+    overflow:scroll;
+    width:428px;
+    /* height: 50vh; */
+}
+.map-img{
+    width: 2000px;
+    height: 2000px;
+}
+.info-event-map{
+    height: 50%;
+    margin-top: auto;
+    padding-top:16px;
+    background-color: #fff ;
+}
+.group-zoom{
+    position: fixed;
+    right: 20px;
+    top:80px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
+
+}
+.zoom-btn{
+    width: 24px;
+}
+.infos-half-top{
+    display: flex;
+}

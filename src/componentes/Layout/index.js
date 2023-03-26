@@ -1,6 +1,8 @@
 import React from 'react'
 import { Navbar } from '../Navbar'
-import '../Layout/styled.css'
+
+import "./styled.css"
+
 
 export const Layout = (props) => {
   return (
