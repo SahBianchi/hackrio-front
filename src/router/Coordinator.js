@@ -17,3 +17,7 @@ export const goToLogin = (navigate)=>{
 export const goToMapPage = (navigate) =>{
     navigate('/map')
 }
+
+export const goToCalendar = (navigate)=>{
+    navigate('/calendar')
+}

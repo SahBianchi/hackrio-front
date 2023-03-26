@@ -5,6 +5,7 @@ import { Homepage } from '../pages/Homepage'
 import { LoginPage } from '../pages/Login/LoginPage'
 import { MapPage } from '../pages/MapPage/MapPage'
 import { SingupPage } from '../pages/Singup/SingupPage'
+import { CalendarPage } from '../pages/Calendar/CalendarPage'
 
 export const Router = () => {
   return (
@@ -15,6 +16,7 @@ export const Router = () => {
             <Route path='/login' element={<LoginPage/>}/>
             <Route path='/map' element={<MapPage/>}/>
             <Route path='/contatos' element={<Contatos/>}/>
+            <Route path='/calendar' element={<CalendarPage/>}/>
         </Routes>
     </BrowserRouter>
   )
