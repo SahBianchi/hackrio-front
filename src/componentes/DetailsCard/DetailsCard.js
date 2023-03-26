@@ -8,9 +8,12 @@ import { FaWalking } from "react-icons/fa";
 import { BsCarFrontFill } from "react-icons/bs";
 import { MdDirectionsBike } from "react-icons/md";
 import colorMapIcon from '../../assets/localIconColor.svg'
+import { goToMapPage } from '../../router/Coordinator'
+import { useNavigate } from 'react-router-dom'
 
 export const DetailsCard = ({event}) => {
     const {adress,
+        about,
         category,
         empresa,
         linksSales,
@@ -18,6 +21,9 @@ export const DetailsCard = ({event}) => {
         price,
         startAt,
         type} = event
+const navigate =useNavigate()
+
+
         const handleDate = (date) =>{
             // const day = date.substring(8, 10); 
             const time = date.substring(11, 16); 
@@ -46,7 +52,7 @@ export const DetailsCard = ({event}) => {
 
                 <div className='event-about'>
                     <h2>Sobre:</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."</p>
+                    <p>{about}.</p>
                 </div>
 
                 <div className='event-ticket'>
@@ -57,14 +63,14 @@ export const DetailsCard = ({event}) => {
                 <div className='event-ticket-link-buy'>
                     <h2>Onde comprar:</h2>{
                         linksSales.map((link)=>{
-                            return  <a href={link}>{link}</a>
+                            return  <a key={link} href={link}>{link}</a>
                         })
                     }
                 </div>
 
                 <div className='event-site'>
                     <h2>Site oficial:</h2>
-                    <a href='https://www.lipsum.com/'>https://www.lipsum.com/</a>
+                    <a href={empresa.link}>{empresa.link}</a>
                 </div>
 
             </div>
@@ -92,7 +98,7 @@ export const DetailsCard = ({event}) => {
                             <p>• 19 min</p>
                         </Flex>
                     </Flex>
-                    <img className='map-icon-color' src={colorMapIcon} alt='Location Icon'/>
+                    <img onClick={()=>goToMapPage(navigate)} className='map-icon-color' src={colorMapIcon} alt='Location Icon'/>
                 </div>
             </div>
         </>

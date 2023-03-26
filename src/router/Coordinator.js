@@ -1,8 +1,8 @@
-export const vaParaHomepage = (navigate)=>{
+export const goToHomePage = (navigate)=>{
     navigate('/')
 }
 
-export const vaParaContatos = (navigate)=>{
+export const goToContacts = (navigate)=>{
     navigate('/contatos')
 }
 

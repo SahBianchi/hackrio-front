@@ -5,14 +5,18 @@ import logoDonko from '../../assets/logoDonko.png'
 import axios from 'axios'
 import { BASE_URL } from '../../constants/baseUrl'
 import { useNavigate } from 'react-router-dom'
-import { goToSingupPage } from '../../router/Coordinator'
+import { goToMapPage, goToSingupPage } from '../../router/Coordinator'
+import { useEffect } from 'react'
 
 export const LoginPage = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const navigate = useNavigate()
     const [isLoading, setIsloading] = useState(false)
-
+useEffect(()=>{
+    localStorage.removeItem('token-donko')
+    
+})
 
     const handleClick =  async () => {
         try {
@@ -28,6 +32,7 @@ export const LoginPage = () => {
             setIsloading(false)
             setEmail('')
             setPassword('')
+            goToMapPage(navigate)
         } catch (error) {
             setIsloading(false)
 
@@ -47,7 +52,7 @@ export const LoginPage = () => {
 
                 <div>
                     <form  onSubmit={(e)=>e.preventDefault()} className={styles.containerForm}>
-                        <input type="email" id="email" name="email" placeholder="E-mail" class="inputPadrao" className={styles.inputLogin} value={email} onChange={(e) => setEmail(e.target.value)} />
+                        <input type="email" id="email" name="email" placeholder="E-mail" className={styles.inputLogin} value={email} onChange={(e) => setEmail(e.target.value)} />
 
                         <input type="password" id="password" name="password" placeholder="Senha" className={styles.inputLogin} value={password} onChange={(e) => setPassword(e.target.value)} />
 
