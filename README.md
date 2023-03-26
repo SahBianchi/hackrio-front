@@ -95,7 +95,7 @@ Foi criado dois repositórios, um para o Front-end e outro para o Back-end. Voc�
 
 ## 🎁 Expressões de gratidão
 
-Gostariámos de agradecer ao **Fecomércio RJ** e **SEBRAI** por promover o **HACKATHON RIO EMPREENDER CRIATIVO** e nos dar a oportunidade de compartilharmos nossos conhecimentos e desenvolvermos nossas habilidades na construção desse desafio.
+Gostariámos de agradecer ao **Fecomércio RJ** e **SEBRAE** por promover o **HACKATHON RIO EMPREENDER CRIATIVO** e nos dar a oportunidade de compartilharmos nossos conhecimentos e desenvolvermos nossas habilidades na construção desse desafio.
 
 Agradecemos também a toda a equipe e mentores que nos apoiram e auxiliaram durante o desenvolvimento desse projeto.
 <br>
