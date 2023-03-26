@@ -6,10 +6,13 @@ import { InfoHour } from '../../componentes/InfoHour'
 import calendarImg from '../../assets/calendar.png'
 import axios from 'axios'
 import { BASE_URL } from '../../constants/baseUrl'
+import { goToDetails } from '../../router/Coordinator'
+import { useNavigate } from 'react-router-dom'
 
 export const CalendarPage = () => {
   const [ isLoading,setIsloading] = useState(false)
   const [ events, setEvents] = useState([])
+  const navigate = useNavigate()
 
 
   useEffect(()=>{
@@ -48,7 +51,7 @@ getEvents()
           return(
             <>
               <LineDividing />
-              <div key={event.id}className={styles.containerEvento}>
+              <div key={event.id}className={styles.containerEvento} onClick={()=>goToDetails(navigate,event.id)}>
                   <p>Rua {event.adress.rua}, {event.adress.numero} - {event.adress.bairro} - {event.adress.cep}</p>
                   
                   <div className={styles.containerDetails}>
