@@ -1,10 +1,8 @@
 .layout-container{
-
     background-color: #000000;
-    /* width: 100vw; */
-    /* max-width: 700px; */
+    display: flex;
+    flex-direction: column;
     width: 428px;
     height: 100vh;
-    min-height: 926px;
-
+    /* min-height: 926px; */
 }
