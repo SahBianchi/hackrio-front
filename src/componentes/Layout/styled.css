@@ -1,5 +1,5 @@
 .layout-container{
-    background-color: #000000;
-    min-width: 428px;
-    min-height: 926px;
+    background-color: #000000; 
+    max-width: 428px;
+    max-height: 100vh;
 }
