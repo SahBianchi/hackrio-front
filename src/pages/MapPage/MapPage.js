@@ -33,7 +33,11 @@ export const MapPage = () => {
         <Layout>
             <div className='coitainer-map'>
                 <div className='container-img'>
-                    <img className='map-img' src={mapImage} alt='Map Image' />
+                    <img className='map-img' src={mapImage} alt='Map Image' onClick={()=>{
+                        if(event){
+                            setEvent()
+                        }
+                    }} />
                     <div id='tag-map1' onClick={()=>handleClickIcon("5dab31e0-bd9d-4dc3-bc00-e94bed677a5b")}>
                         <HiLocationMarker />
                         {/* verde esposição */}
