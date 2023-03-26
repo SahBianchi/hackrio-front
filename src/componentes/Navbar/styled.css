@@ -9,7 +9,7 @@
     }
 
     .header-width{
-        width: 428px;
+        /* width: 428px; */
         display: flex;
         align-items: center;
     }
