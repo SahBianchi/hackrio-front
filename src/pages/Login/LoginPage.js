@@ -35,8 +35,11 @@ useEffect(()=>{
             goToMapPage(navigate)
         } catch (error) {
             setIsloading(false)
+            if(error.response.status===401){
+                alert(error.response.data)
+            }
 
-            console.log(error)
+            console.log(error.response)
         }
 
     }

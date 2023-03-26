@@ -48,6 +48,7 @@ export const SingupPage = () => {
       goToMapPage(navigate)
       window.location.reload()
     } catch (error) {
+      alert(error.response.data)
       console.log(error)
     }
   }
