@@ -64,8 +64,8 @@
 
 #calendar{
     background-color: black;
-    position: fixed;
-    bottom: 300px;
+    position: sticky;
+    bottom: 20px;
     height: 3.5rem;
     width: 3.5rem;
     font-size: 3rem;
