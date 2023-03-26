@@ -1,30 +1,56 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./styled.css"
 import mapImage from '../../assets/mapTag.png'
 import { Layout } from '../../componentes/Layout'
 import { MapCard } from '../../componentes/MapCard/MapCard'
 import { HiLocationMarker } from 'react-icons/hi'
 import { BiCurrentLocation } from 'react-icons/bi'
+import { goToDetails } from '../../router/Coordinator'
+import axios from 'axios'
+import { BASE_URL } from '../../constants/baseUrl'
 
 export const MapPage = () => {
+    const [event,setEvent] = useState()
+    const [isLoading,setIsloading] = useState(false)
+
+
+    const handleClickIcon = async (id) =>{
+       try {
+        setIsloading(true)
+        const result = await axios.get(`${BASE_URL}/events?id=${id}`)
+        setEvent(result.data.events[0])
+        console.log(event)
+        setIsloading(false)  
+        
+       } catch (error) {
+        setIsloading(false)
+        console.log(error)
+       }
+    }
+
+
     return (
         <Layout>
             <div className='coitainer-map'>
                 <div className='container-img'>
                     <img className='map-img' src={mapImage} alt='Map Image' />
-                    <div id='tag-map1'>
+                    <div id='tag-map1' onClick={()=>handleClickIcon("5dab31e0-bd9d-4dc3-bc00-e94bed677a5b")}>
                         <HiLocationMarker />
+                        {/* verde esposição */}
                     </div>
-                    <div id='tag-map2'>
+                    <div id='tag-map2' onClick={()=>handleClickIcon("5dab31e0-bd9d-4dc3-bc00-e94bed677a5c")}>
                         <HiLocationMarker />
+                        {/* violeta teatro */}
                     </div>
-                    <div id='tag-map3'>
+                    <div id='tag-map3'onClick={()=>handleClickIcon("5dab31e0-bd9d-4dc3-bc00-e94bed677a5d")}>
                         <HiLocationMarker />
+                        {/* musica */}
                     </div>
-                    <div id='tag-map4'>
+                    <div id='tag-map4'onClick={()=>handleClickIcon("5dab31e0-bd9d-4dc3-bc00-e94bed677a5a")}>
                         <HiLocationMarker />
+                        {/* musica */}
                     </div>
-                    <div id='tag-map5'> 
+                    <div id='tag-map5' > 
                         <BiCurrentLocation />
                     </div>
                     <div id='group-zoom'>
@@ -35,7 +61,7 @@ export const MapPage = () => {
 
                     </div>
                 </div>
-                <MapCard />
+               { event?<MapCard event={event}/>:<></>}
             </div>
         </Layout>
 
