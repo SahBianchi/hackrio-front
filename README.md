@@ -6,9 +6,11 @@
 
 ## **Projeto DonkoRio**
 
-O Donko é uma aplicação web que será projetada para ser uma plataforma completa que serve como guia para eventos culturais, desde shows musicais até exposições de arte, teatro e outras opções de entretenimento.
+O Donko é uma aplicação web projetada para ser uma plataforma completa que serve como guia para eventos culturais, desde shows musicais até exposições de arte, teatro e outras opções de entretenimento.
 
 Durante o processo notamos que as principais dores do segmento de arte, cultura e entretenimento, teatro e música, é que atualmente existem diversos sites separados muitas vezes por tema, também não existia um "Guia de Eventos" por localização e menos ainda que tivesse um identificador de preferências. Com isso veio a solução, criar uma plataforma que forneça ao usuário informações sobre eventos culturais em sua área local, facilitando a busca e participação nessas atividades, por geolocalização e interação visual por mapa. Assim visamos o aumento de participação nos eventos locais e de faturamento desse setor no Estado do Rio de Janeiro.
+
+Conheça a plataforma [**DonkoRio**](https://donko-qoxwbeeqn-sahbianchi.vercel.app/login) e tenha acesso a *Cultura na palma da sua mão* 😉. 
 
 <br>
 
@@ -18,7 +20,6 @@ Durante o processo notamos que as principais dores do segmento de arte, cultura 
 * Alerta para que o usuário saiba se o evento está longe, perto ou se já começou.
 * Interação com plataformas para vendas de ingressos
 * Planos mensais com benefícios
-
 
 <br>
 
@@ -31,7 +32,17 @@ Essas instruções permitirão que você consiga ter esse projeto em operação 
 * Instale NodeJS em seu computador.
 * Baixe os aquivos do repositório hackrio-front aqui no GitHub.escrever sobre o projeto
 * Abra a pasta no terminal e de o comando: **npm i**
+
 <br>
+
+### 📋 Orientações para testes
+- Para testar o login você pode utilizar os seguintes usuários:
+    - marina@email.com
+    - monica@email.com
+    - samantha@email.com
+    - alexandre@email.com
+- A senha é a mesma para todos eles: **123456@Aa**
+- Você também pode criar um novo usuário na página de cadastro e testa-lo normalmente.
 <br>
 
 ## 📦 **Desenvolvimento**
@@ -60,15 +71,13 @@ Foi criado dois repositórios, um para o Front-end e outro para o Back-end. Voc�
 * [**Repositório - Back-End**](https://github.com/Afmjuniors/donko-back)
 
 <br>
-<br>
 
-## ✏️ **Produto**
+## ✏️ **Aplicação**
 
 <p align="center">
-    <img src="./src/assets/aplicacao.png" width="700" height="auto">
+    <img src="./src/assets/aplicacao.png">
 </p>
 
-<br>
 <br>
 
 ## 📺 **Vídeos de Apresentação**
@@ -77,7 +86,6 @@ Foi criado dois repositórios, um para o Front-end e outro para o Back-end. Voc�
 
 * <a href="#">Aplicação</a>
 
-<br>
 <br>
 
 ---
@@ -91,8 +99,6 @@ Foi criado dois repositórios, um para o Front-end e outro para o Back-end. Voc�
 
 💻 **Alexandre Machado** - *Full-Stack* - [Linkedin](https://www.linkedin.com/in/afmjuniors/) | [GitHub](https://github.com/Afmjuniors)
 
-<br>
-<br>
 <br>
 
 ## 🎁 **Expressões de gratidão**
