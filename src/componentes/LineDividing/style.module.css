@@ -1,0 +1,6 @@
+.lineDividing{
+    width: 430px;
+    margin: 18px 0;
+    border: 1px solid transparent;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #FF6489, #B935E8) border-box;
+}
