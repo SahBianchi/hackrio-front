@@ -19,7 +19,6 @@ export const MapPage = () => {
         setIsloading(true)
         const result = await axios.get(`${BASE_URL}/events?id=${id}`)
         setEvent(result.data.events[0])
-        console.log(event)
         setIsloading(false)  
         
        } catch (error) {

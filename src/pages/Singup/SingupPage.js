@@ -41,7 +41,6 @@ export const SingupPage = () => {
       setIsloading(true)
 
       const response = await axios.post(`${BASE_URL}/users/signup`, newUser)
-      console.log(response)
       localStorage.setItem("token-donko", response.data.token)
       setIsloading(false)
       setEmail('')
@@ -118,7 +117,6 @@ export const SingupPage = () => {
 
         </div>
         <Button id='cursor-pointer' type='primary' onClick={() => {
-          console.log("Fui Clicado")
           handleOnSubmit()
         }}> {
           isLoading?
