@@ -1,13 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&display=swap');
-
-@media screen and (min-width: 428px){
-    main{
-        width: 100vw;
+    .sectionLogin{
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 
     .containerHeader{
@@ -23,11 +18,11 @@
     }
 
     .txtSlogan{
-        font-family: 'IBM Plex Sans';
         font-weight: 300;
         font-size: 16px;
         line-height: 21px;
         margin-bottom: 85px;
+        text-align: center;
     }
 
     .containerForm{
@@ -56,9 +51,6 @@
         border: 1px solid transparent;
         background: linear-gradient(white, white) padding-box, linear-gradient(to right, #FF6489, #B935E8) border-box;
     }
-
-}
-    
     
 
 
