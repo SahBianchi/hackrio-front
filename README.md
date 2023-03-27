@@ -80,6 +80,12 @@ Foi criado dois repositórios, um para o Front-end e outro para o Back-end. Voc�
 
 <br>
 
+## 📺 Vídeo de Apresentação
+
+* <a href="https://www.youtube.com/watch?v=xecVuzvCJCo">Apresentação</a>
+
+<br>
+
 ---
 ## ✒️ **Equipe**
 
